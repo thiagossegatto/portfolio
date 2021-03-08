@@ -38,9 +38,19 @@ export const Slogan = styled.h1`
   ${({ theme }) => css`
     border-right: 2px solid transparent;
     color: ${theme.colors.white};
-    white-space: nowrap;
     font-size: 3rem;
-    animation: blinkCursor 500ms 11 normal, typing 4s steps(50) 1s normal both;
+    opacity: 0;
+    animation: showSlogan 1s 2s ease-in-out forwards;
+
+    @keyframes showSlogan {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    /* animation: blinkCursor 500ms 9 normal, typing 3s steps(50) 1s normal both;
     overflow: hidden;
 
     @keyframes typing {
@@ -59,6 +69,6 @@ export const Slogan = styled.h1`
       50% {
         border-right-color: transparent;
       }
-    }
+    } */
   `}
 `
