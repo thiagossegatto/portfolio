@@ -35,5 +35,11 @@ export const Link = styled.a`
     height: 25px;
     margin-bottom: ${theme.spacings.xsmall};
     color: ${theme.colors.white};
+
+    transition: color 0.5s;
+
+    :hover {
+      color: ${theme.colors.secondary};
+    }
   `}
 `
