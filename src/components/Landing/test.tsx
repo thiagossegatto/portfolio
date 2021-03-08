@@ -9,7 +9,7 @@ describe('<Landing />', () => {
 
     expect(
       screen.getByRole('img', { name: /segatto.dev/i }).parentElement
-        ?.parentElement
+        ?.parentElement?.parentElement
     ).toHaveStyle({ backgroundColor: theme.colors.mainBg })
   })
 })
