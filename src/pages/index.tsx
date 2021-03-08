@@ -1,5 +1,5 @@
-import Main from 'components/Main'
+import Landing from 'components/Landing'
 
 export default function Home() {
-  return <Main />
+  return <Landing />
 }
